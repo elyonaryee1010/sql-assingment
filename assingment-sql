@@ -1,0 +1,12 @@
+CREATE TABLE Salesman (
+    Salesmanid INT PRIMARY KEY,
+    Name VARCHAR(20),
+    City VARCHAR(20),
+    Commission DECIMAL(10,2)
+
+    );
+
+INSERT INTO Salesman VALUES (5001, 'Tom Perrt', 'Toronto', 0.25), (5001,'Mark Zwokaric', 'Budapest', 0.72);
+SELECT * FROM Salesman;
+
+SELECT * FROM Salesman WHERE City = 'Toronto';
