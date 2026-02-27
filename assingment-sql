@@ -10,3 +10,23 @@ INSERT INTO Salesman VALUES (5001, 'Tom Perrt', 'Toronto', 0.25), (5001,'Mark Zw
 SELECT * FROM Salesman;
 
 SELECT * FROM Salesman WHERE City = 'Toronto';
+
+
+
+--LIKE OPERATOR SQL
+CREATE TABLE Student (
+    Student_id INT PRIMARY KEY,
+    NAME VARCHAR(20)
+
+);
+
+INSERT INTO STUDENT (Student_id, NAME) VALUES
+ ('1', 'Adrian'), ('2', 'Ben'),
+('3', 'Calvin'), ('4','Victor'), ('5', 'Garfield'),
+('6','John'), ('7','Peter'), ('8','Andy'), ('9','Andrew'), ('10','Paul');
+
+SELECT * FROM Student WHERE NAME LIKE 'A%';
+SELECT * FROM Student WHERE NAME LIKE 'B%';
+SELECT * FROM Student WHERE NAME LIKE 'V%';
+
+
