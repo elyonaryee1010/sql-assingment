@@ -1,16 +1,14 @@
-CREATE TABLE Salesman (
-    Salesmanid INT PRIMARY KEY,
-    Name VARCHAR(20),
-    City VARCHAR(20),
-    Commission DECIMAL(10,2)
+-- DROP TABLE Salesman;
 
-    );
+-- CREATE TABLE Salesman (
+--     Salesmanid INT PRIMARY KEY,
+--     NAME Varchar(20),
+--     CITY Varchar(20)
+    
+-- );
 
-INSERT INTO Salesman VALUES (5001, 'Tom Perrt', 'Toronto', 0.25), (5001,'Mark Zwokaric', 'Budapest', 0.72);
-SELECT * FROM Salesman;
-
-SELECT * FROM Salesman WHERE City = 'Toronto';
-
+-- INSERT INTO SALESMAN VALUES (5001, 'Mark Surten', 'Chicago'), (4001, 'Lucy Prezz', 'London');
+-- SELECT * FROM SALESMAN WHERE City = 'Chicago';
 
 
 --LIKE OPERATOR SQL
@@ -28,5 +26,26 @@ INSERT INTO STUDENT (Student_id, NAME) VALUES
 SELECT * FROM Student WHERE NAME LIKE 'A%';
 SELECT * FROM Student WHERE NAME LIKE 'B%';
 SELECT * FROM Student WHERE NAME LIKE 'V%';
+
+--using aggreggates
+CREATE TABLE IF NOT EXISTS Products (
+    Products_id INT PRIMARY KEY,
+    ITEM Varchar(20),
+    PRICING DECIMAL(10,2)
+
+);
+
+INSERT INTO Products VALUES 
+('1', 'Sugar', 1.9),
+('2', 'Rice', 2.99),
+('3', 'Chicken', 0.99),
+('4', 'Ramen', 3.59);
+
+SELECT MIN(PRICE) FROM Products;
+SELECT MAX(PRICE) FROM Products;
+SELECT SUM(PRICE) FROM Products;
+SELECT AVG(PRICE) FROM Products;
+SELECT COUNT(PRICE) FROM Products;
+
 
 
