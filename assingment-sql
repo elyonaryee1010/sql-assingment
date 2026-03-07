@@ -49,3 +49,25 @@ SELECT COUNT(PRICE) FROM Products;
 
 
 
+--Hacker news(ethical)
+CREATE TABLE IF NOT EXISTS News (
+    year INT,
+    name VARCHAR(20),
+    author VARCHAR(20)
+);
+
+INSERT INTO News VALUES
+('2001', 'How Ethical Hacking works', 'Mark Johnson'),
+('2002', 'My Hacking isnt Ideal', 'Boris Brown'),
+('2003', 'Hacking: A new way of coding', 'Lary Smith');
+
+SELECT * FROM WHERE name LIKE 'H%' ORDER BY year DESC;
+
+
+    
+
+
+
+
+
+
