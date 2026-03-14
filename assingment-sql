@@ -117,6 +117,83 @@ where grade is not null;
 
 
 
+--After class project 
+CREATE TABLE IF NOT EXISTS People (
+   people_id int primary key
+    name TEXT,
+    nationality,
+    city,
+    age REAL,
+    salary decimal(10,20)
+   
+   );
+
+INSERT INTO RESTAURANT(name, nationality, city, age real)
+VALUES 
+   ('1','PETER', 'BROOKLYN', 'Washington DC', 4.4, 13.5)
+   ('2','James', 'British', 'London', 3.4, 14.7)
+   ('3','Mark', 'Canadian', 'Nunavut', 6.4, 5.9)
+   ('4','Qing', 'Chinese', 'Beijing', 9.4, 9.8)
+   ('5','Yu', 'Japanese', 'Tokyo', 9.4, 5.0)
+
+
+
+
+select *
+from people
+where nationality like 'b%';
+
+select*
+from people
+where name like 'j%';
+
+select*
+from people
+where name like 'p%';
+
+select *
+from people
+where city like 'w%';
+
+select *
+from people
+where city like 'l%';
+
+select*
+from people
+where city like 'n%';
+
+select *
+from people
+join people on people_id ;
+
+select*
+from people
+where age >= 9.0;
+
+select*
+from people
+where name = 'Beijing';
+
+select*
+from people
+order by age DESC
+limit 4;
+
+select*
+from people
+where name = 'Beijing' and salary in {'9.4', '9.8'};
+
+
+ 
+
+
+
+
+
+
+
+
 
 
     
